@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Emma Carlsson">
+        <meta name="description" content="Beskriv dina nuvarande aktiviteter och intressen">
+        <meta name="keywords" content="nuvarande, aktiviteter, intressen">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="application-name" content="Now">    
+        <title>Nuvarande aktiviteter och intressen</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="print.css" media="print">
+
+    </head>
+    <body>
+        <header>
+            <h1>Emma Carlsson - Nuvarande aktiviteter och intressen</h1>
+           <nav>
+                <ul>
+                    <!-- Här tog jag hjälp av AI för att få en snyggare navigering mellan de olika sidorna.-->
+                    <li><a href="home.html">Huvudsida</a></li>
+                    <li><a href="history.html">Tidigare erfarenheter</a></li>
+                    <li><a href="now.html" aria-current="page"><strong>Vad gör jag idag?</strong></a></li>
+                    <li><a href="future.html">Vad vill jag göra i framtiden?</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+        <main> 
+            <section>
+                <h2>Min roll som QA på Tradera</h2>
+                <p>Här kan du läsa mer om min roll som Quality Assurance på Tradera.</p>
+
+                <article>
+                    <h3>Testning</h3>
+                    <p>Jag är ansvarig för att testa webb- och mobilapplikationen för att säkerställa att den fungerar som den ska.</p>
+                </article>
+
+                <article>
+                    <h3>QA testverktyg</h3>
+                    <p>Jag har under min tid på Tradera fått förtroendet att utveckla ett AI-drivet testverktyg för att hantera regressionstestningen av traderas appar (iOS och Android).</p>
+                    <p>Verktyget använder Androids kommandoradsverktyg <abbr title="Android Debug Bridge">adb</abbr> för att styra testagenten och simulera användarinteraktioner i appen, till exempel att starta appen och trycka på skärmen:</p>
+                    <!-- Whitespace i pre/code justerat med AI-hjälp så raderna visas i linje i webbläsaren -->
+                    <pre><code>adb shell am start -n com.tradera.app/.MainActivity
+adb shell input tap 540 960</code></pre>
+                    <video src="demo-testverktyg.mp4" controls width="640" height="360">
+                        Din webbläsare stödjer inte videouppspelning.
+                    </video>
+                    <p><a href="video-fullskarm.html">Visa i fullskärm</a></p>
+
+
+
+                </article>
+
+            </section>
+
+            <section>
+                <h2>Intressen</h2>
+                <p>Jag har ett stort intresse för teknik, programmering och digitala lösningar. Jag gillar även att resa och upptäcka nya kulturer.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Emma Carlsson. Alla rättigheter förbehållna.</p>
+            <p>Kontakt: <a href="mailto:emmacarlssonn@hotmail.com">emmacarlssonn@hotmail.com</a></p>
+        </footer>   
+    </body>
+</html>

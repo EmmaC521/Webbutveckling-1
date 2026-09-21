@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Emma Carlsson">
+        <meta name="description" content="Huvudsida: sammanfattad information om dig själv">
+        <meta name="keywords" content="huvudsida, sammanfattning, information">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="application-name" content="Home">
+        <title>Home</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    </head>
+    <body>
+        <header>
+            <h1>Emma Carlssons CV</h1>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="Bild1-mobil.png">
+                    <img src="Bild1-dator.png" alt="Emma Carlsson">
+                </picture>
+                <figcaption>Bild på Emma Carlsson</figcaption>
+            </figure>
+            <nav>
+                <ul>
+                    <!-- Här tog jag hjälp av AI för att få en snyggare navigering mellan de olika sidorna.-->
+                    <li><a href="home.html" aria-current="page"><strong>Huvudsida</strong></a></li>
+                    <li><a href="history.html">Tidigare erfarenheter</a></li>
+                    <li><a href="now.html" >Vad gör jag idag?</a></li>
+                    <li><a href="future.html">Vad vill jag göra i framtiden?</a></li>
+                </ul>
+            </nav>      
+        </header>
+
+
+        <main>
+            <section>
+                <h2>Välkommen till min CV-sida!</h2>
+                <p>Här kan du läsa om mina tidigare erfarenheter, vad jag gör idag och vad jag vill göra i framtiden.</p>
+            </section>
+
+            <section>
+                <h2>Om mig</h2>
+                <p>Jag heter Emma Carlsson och är en driven och engagerad person med erfarenhet inom olika områden. Jag strävar alltid efter att utvecklas och lära mig nya saker.</p>
+                <article>
+                    <h3>Lyssna på min presentation</h3>
+                    <audio src="presentation.mp3" controls>
+                        Din webbläsare stödjer inte ljuduppspelning.
+                    </audio>
+                </article>
+            </section>
+
+            <aside>
+                <h3>Kontaktinformation</h3>
+                <dl>
+                    <dt>E-post</dt>
+                    <dd><a href="mailto:emmacarlssonn@hotmail.com">emmacarlssonn@hotmail.com</a></dd>
+                    <dt>LinkedIn</dt>
+                    <dd><a href="https://www.linkedin.com/in/emma-carlsson-079720325">linkedin.com/in/emma-carlsson-079720325</a></dd>
+                    <dt>Telefon</dt>
+                    <dd><a href="tel:+46737291023">073-729 10 23</a></dd>
+
+
+                </dl>
+            </aside>
+
+            <section>
+                <h2>Kontakta mig via formulär</h2>
+                <form method="post" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+                    <fieldset>
+                        <legend>Kontakta mig via formulär</legend>
+
+                        <label for="namn">Namn:</label>
+                        <input type="text" id="namn" name="namn" placeholder="Ditt namn" required autofocus>
+
+                        <label for="epost">E-post:</label>
+                        <input type="email" id="epost" name="epost" placeholder="din@epost.se" required
+                            pattern="[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}" title="Ange en giltig e-postadress, t.ex. namn@exempel.se">
+
+                        <label for="hemsida">Hemsida:</label>
+                        <input type="url" id="hemsida" name="hemsida" placeholder="https://exempel.se" list="hemsida-forslag">
+                        <datalist id="hemsida-forslag">
+                            <option value="https://linkedin.com/in/">
+                            <option value="https://github.com/">
+                        </datalist>
+
+                        <label for="amne">Ämne:</label>
+                        <select id="amne" name="amne">
+                            <optgroup label="Jobb">
+                                <option value="jobberbjudande">Jobberbjudande</option>
+                                <option value="samarbete">Samarbete</option>
+                            </optgroup>
+                            <optgroup label="Övrigt">
+                                <option value="fraga">Fråga</option>
+                                <option value="ovrigt">Övrigt</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="meddelande">Meddelande:</label>
+                        <textarea id="meddelande" name="meddelande" placeholder="Skriv ditt meddelande här..." required></textarea>
+
+                        <label for="bilaga">Bifoga fil:</label>
+                        <input type="file" id="bilaga" name="bilaga">
+
+                        <label><input type="checkbox" name="vill_ha_svar" value="ja"> Jag vill ha svar</label>
+
+                        <fieldset>
+                            <legend>Vill du ha en kopia av meddelandet?</legend>
+                            <label><input type="radio" name="kopia" value="ja"> Ja</label>
+                            <label><input type="radio" name="kopia" value="nej" checked> Nej</label>
+                        </fieldset>
+
+                        <input type="submit" value="Skicka">
+                    </fieldset>
+                </form>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Emma Carlsson. Alla rättigheter förbehållna.</p>
+            <p>Kontakt: <a href="mailto:emmacarlssonn@hotmail.com">emmacarlssonn@hotmail.com</a></p>
+        </footer>
+    </body>
+</html>
